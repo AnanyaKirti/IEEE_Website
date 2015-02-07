@@ -1528,26 +1528,13 @@ textarea .form-control {
 /*Ananya here! */
 
 
-#enter_my {
-  position:absolute;
-  left:50%; /* centers the loading animation horizontally one the screen */
-  top:80%; /* centers the loading animation vertically one the screen */
-
-  margin:-100px 0 0 -100px; /* is width and height divided by two */
-
-  border: 2px solid #fff;
-  color: #fff;
-  padding: 10px 20px;
-  font-size: 18px;
-  font-weight: 700;
-  text-transform: uppercase;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-  z-index: 1000;
-}
-#enter_my:hover{
-  background-color: #fff;
+.Welcome{
+  float: left;
+  height: 100%;
+  display: inline;
+  width: 100%;
+  position: relative;
+  background-image: url(img/full-slider/slider_1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
 }
