@@ -90,7 +90,7 @@ img{
   position:absolute;
   left:50%; /* centers the loading animation horizontally one the screen */
   top:80%; /* centers the loading animation vertically one the screen */
-  background-image:url(img/status.GIF); /* path to your loading animation */
+
   background-repeat:no-repeat;
   background-position:center;
   margin:-100px 0 0 -100px; /* is width and height divided by two */
@@ -1521,4 +1521,33 @@ textarea .form-control {
 	.subscr_btn {font-size: 11px;}
 	.slider_caption {margin-top: 34%;}  
 	
+}
+
+
+
+/*Ananya here! */
+
+
+#enter_my {
+  position:absolute;
+  left:50%; /* centers the loading animation horizontally one the screen */
+  top:80%; /* centers the loading animation vertically one the screen */
+
+  margin:-100px 0 0 -100px; /* is width and height divided by two */
+
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  z-index: 1000;
+}
+#enter_my:hover{
+  background-color: #fff;
 }
