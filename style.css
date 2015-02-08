@@ -1532,9 +1532,9 @@ textarea .form-control {
 
 
 .Welcome{
+  display: inline;
   float: left;
   height: 120%;
-  display: inline;
   width: 100%;
   position: relative;
   background-image: url(img/full-slider/new.jpeg);
@@ -1560,12 +1560,15 @@ textarea .form-control {
   border: 2px solid #fff;
   color: #fff;
   font-size: 20px;
-  display: inline-block;
+  display: block;
   text-transform: uppercase;
   text-align: center;
   margin: 0 auto;
-  margin-right: auto;
-  margin-left: auto;
+
+  margin-left: 0%;
+  padding-bottom: 20px;
+  z-index: 10000;
+  top:70%;
 }
 .About_Us_Button:hover,.About_Us_Button:focus{
   text-decoration: none;
@@ -1575,8 +1578,8 @@ textarea .form-control {
   -o-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
-  -webkit-transition: all .2s ease-in-out;
-  -moz-transition: all .2s ease-in-out;
-  -o-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
