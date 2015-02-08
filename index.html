@@ -62,7 +62,10 @@
 				</div>
 
 						<div id="status">&nbsp;
+						<!--
 								<img src="loading-cylon.svg" width="64" height="64" />
+								-->
+								<img src="rings.svg" width="64" height="64" />
 						</div>
 				</div>
 				<!-- END PRELOADER -->
@@ -111,31 +114,26 @@
 								</nav>  
 						</div>
 						<!-- END MENU -->
+</header>
 
-
-
-						<!-- BEGIN SLIDER AREA-->
-						<div class="Welcome">
-														<!-- FIRST SLIDE CAPTION-->
-														<div class="slider_caption">
-																<h2>Welcome</h2>
-																<p> Indian Institute of Technology, Ropar </p>
-																				<div class="section">
-																						<div id="container_IEEE" class="container_IEEE" style="max-width: 700px;">
-																								<img src="Img/IEEE/IEEE.png" style="width:100px">
-																						</div>
-																				</div>
-
-																<a href="#about" class="slider_btn">About Us</a>              
-														</div>
-												</li>
-
+<div class="Welcome" "style=height:100%">
+	<div class="section" OnContextMenu="return false;">
+		<div id="container_IEEE" class="container_IEEE">
+			<ul id="scene" class="scene">
+				<li class="layer" data-depth="0.20"><img src="Img/IEEE/IEEE.png"></li>
+				
+				<li class="layer" data-depth="0.30"><img src="Img/IEEE/Welcome.png"></li>
+				<li class="layer" data-depth="0.40"><img src="Img/IEEE/IIT_Ropar.png"></li>
+			</ul>
+		</div>
+	</div>
+	<a href="#about" class="About_Us_Button" style="left:50%">About Us</a>
+</div>
 										<!-- BEGAIN SLIDER NAVIGATION -->
 										
 								<!-- END SLIDER-->          
-						</div>
 						<!-- END SLIDER AREA -->
-				</header>
+				
 				<!--=========== End HEADER SECTION ================--> 
 
 
@@ -1137,5 +1135,19 @@
 
 				<!-- Custom js-->
 				<script src="js/custom_enter.js"></script>
+		<!-- Parallax.js-->
+		<script src="JS/parallax.js"></script>
+
+					<script>
+
+		// Pretty simple huh?
+		var scene = document.getElementById('scene');
+		var parallax = new Parallax(scene);
+
+
+		//var scene2 = document.getElementById('scene2');
+		//var parallax2 = new Parallax(scene2,{  originX: 0.0,originY: 0.0});
+
+	</script>
 		</body>
 </html>

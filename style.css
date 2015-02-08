@@ -1,3 +1,4 @@
+
 /*
 Template Name: SinglePro - Multipurpose Bootstrap HTML5/CSS3 One Page Template
 Template URI:http://www.wpfreeware.com/themes/premium/singlepro/
@@ -368,6 +369,8 @@ img{
 	font-size: 20px;
 	display: inline-block;
 	text-transform: uppercase;
+  text-align: center;
+  left: 50%;
 }
 .slider_btn:hover,.slider_btn:focus{
 	text-decoration: none;
@@ -1530,11 +1533,50 @@ textarea .form-control {
 
 .Welcome{
   float: left;
-  height: 100%;
+  height: 120%;
   display: inline;
   width: 100%;
   position: relative;
-  background-image: url(img/full-slider/slider_1.jpg);
+  background-image: url(img/full-slider/new.jpeg);
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: scroll;
+
+  min-height: 100%;
+  display: block;
+  padding-bottom: 10%;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.Welcome a{
+  left: 0%;
+  position: absolute;
+}
+
+
+.About_Us_Button{
+  position: absolute;
+  padding: 10px 15px;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 20px;
+  display: inline-block;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+.About_Us_Button:hover,.About_Us_Button:focus{
+  text-decoration: none;
+  border: 2px solid ;
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
