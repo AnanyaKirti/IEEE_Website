@@ -1574,6 +1574,10 @@ start responsive style
 	-ms-transform: translate(-50%, -50%);
 	z-index: 10;
 	float: left;
+	-webkit-animation:fadeIn ease-in 1;
+    -moz-animation:fadeIn ease-in 1;
+    -o-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
 
 }
 .About_Us_Button:hover,.About_Us_Button:focus{
@@ -1636,7 +1640,7 @@ start responsive style
 .fadeIn {
 	position: absolute;
 	left: 50%;
-	max-width: 5%;
+	max-width: 3%;
 	top :90%
 	transform: translate(-50%, -50%);
 	-moz-transform:translate(-50%, -50%);
@@ -1692,3 +1696,9 @@ start responsive style
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:0.9; } }
 @-o-keyframes fadeIn { from { opacity:0; } to { opacity:0.9; } }
 @keyframes fadeIn { from { opacity:0; } to { opacity:0.9; } }
+
+
+
+.About_Us_page{
+	padding-top: 5%;
+}
