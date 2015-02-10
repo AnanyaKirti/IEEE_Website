@@ -1403,7 +1403,7 @@ start responsive style
 @media(max-width:991px ){
 	.navbar-default .navbar-nav > li > a {font-size: 13px;padding: 15px 6px;}
 	.navbar-brand {font-size: 28px;}
-	#slides{height: 600px !important;}
+	.Welcome{height: 600px !important;}
 	.slider_caption > h2 {font-size: 48px;line-height: 48px;}
 	.slider_caption > p {font-size: 18px;}
 	.about_area {padding-bottom: 80px;}
@@ -1429,7 +1429,7 @@ start responsive style
 	.navbar-collapse{background-color: rgba(0,0,0,0.8);} 
 	.main_nav{text-align: center;}
 	.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {background-color: rgba(0,0,0,0.5);}
-	#slides {height: 360px !important;}
+	.Welcome {height: 360px !important;}
 	.slider_caption {margin-top: 15%;}
 	.slider_caption > h2 {font-size: 25px;line-height: 26px;}
 	.slider_caption > p {font-size: 15px;}
@@ -1475,7 +1475,7 @@ start responsive style
 }
 
 @media(max-width:480px ){	
-	#slides {height: 320px !important;}
+	.Welcome {height: 320px !important;}
 	.slider_caption {margin-top: 20%;}
 	.slider_caption > h2 { font-size: 20px;line-height: 22px;margin-bottom: 0px;}
 	.slider_caption > p {font-size: 14px;}
@@ -1542,6 +1542,7 @@ start responsive style
 	background-attachment: scroll;
 
 	min-height: 100%;
+	height:  100vh;
 	display: block;
 	padding-bottom: 12%;
 	margin-left: 0px;
@@ -1563,15 +1564,15 @@ start responsive style
 	display: block;
 	text-transform: uppercase;
 	text-align: center;
-	margin: 0 auto;
 
 	margin-left: 50%;
-	top:70%;
+	
 	transform: translate(-50%, -50%);
 	-moz-transform:translate(-50%, -50%);
 	-webkit-transform:translate(-50%, -50%);
 	-o-transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
+	top:80%;
 	z-index: 10;
 	float: left;
 	-webkit-animation:fadeIn ease-in 1;
@@ -1641,7 +1642,7 @@ start responsive style
 	position: absolute;
 	left: 50%;
 	max-width: 3%;
-	top :90%
+	top :90%;
 	transform: translate(-50%, -50%);
 	-moz-transform:translate(-50%, -50%);
 	-webkit-transform:translate(-50%, -50%);
