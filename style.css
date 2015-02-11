@@ -1574,7 +1574,6 @@ start responsive style
 	-ms-transform: translate(-50%, -50%);
 	top:80%;
 	z-index: 10;
-	float: left;
 	-webkit-animation:fadeIn ease-in 1;
     -moz-animation:fadeIn ease-in 1;
     -o-animation:fadeIn ease-in 1;
@@ -1584,8 +1583,6 @@ start responsive style
 .About_Us_Button:hover,.About_Us_Button:focus{
 	text-decoration: none;
 	border: 2px solid ;
-	margin-left: 50%;
-	top:70%;
 
 }
 
@@ -1685,10 +1682,10 @@ start responsive style
 }
 
 .fadeIn-Delay-5s {
-    -webkit-animation-delay:10s;
-    -moz-animation-delay:10s;
-    -o-animation-delay:10s;
-    animation-delay:10s;
+    -webkit-animation-delay:3s;
+    -moz-animation-delay:3s;
+    -o-animation-delay:3s;
+    animation-delay:3s;
 }
 
 /* Key Frames

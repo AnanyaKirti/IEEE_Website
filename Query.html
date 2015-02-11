@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<!-- Basic Page Needs
+	================================================== -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Query IEEE - IIT Ropar </title>
+
+	<!-- Mobile Specific Metas
+	================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+
+	<!-- CSS
+	================================================== -->       
+	<!-- Bootstrap css file-->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- Font awesome css file-->
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<!-- Superslide css file-->
+	<link rel="stylesheet" href="css/superslides.css">
+	<!-- Slick slider css file -->
+	<link href="css/slick.css" rel="stylesheet"> 
+	<!-- smooth animate css file -->
+	<link rel="stylesheet" href="css/animate.css">  
+	<!-- Elastic grid css file -->
+	<link rel="stylesheet" href="css/elastic_grid.css"> 
+	<!-- Circle counter cdn css file -->
+
+	<!-- Default Theme css file -->
+	<link id="orginal" href="css/themes/default-theme.css" rel="stylesheet">
+	<!-- Main structure css file -->
+	<link href="style.css" rel="stylesheet">
+	<!--IEEE logo -->
+	<link rel="stylesheet" type="text/css" href="css/IEEE_styles.css"/>
+
+	<!-- Google fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+	<style>
+		#myform{
+			width:300px;
+			margin: 0 auto;
+		}
+		label{
+			display:block;
+		}
+		input,textarea{
+			width:100%;
+		}
+	</style>
+	<link href='css/progression.min.css' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/progression.min.js"></script>
+
+
+
+
+	<script>
+		jQuery(document).ready(function($) {
+
+			$("#myform").progression({
+				tooltipWidth: '200',
+				tooltipPosition: 'right',
+				tooltipOffset: '50',
+				showProgressBar: true,
+				showHelper: true,
+				tooltipFontSize: '14',
+				tooltipFontColor: 'fff',
+				progressBarBackground: 'fff',
+				progressBarColor: 'FFBA00',
+				tooltipBackgroundColor:'35A2C6',
+				tooltipPadding: '10',
+				tooltipAnimate: true
+			});
+
+		});
+
+	</script>
+</head>
+<body>
+	<div id="preloader">
+		<div class="section">
+			<div id="container_IEEE" class="container_IEEE">
+				<ul class="scene">
+					<li class="layer" data-depth="0.20"><img src="Img/IEEE/IEEE.png"></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="status">&nbsp;
+			<!--
+				<img src="loading-cylon.svg" width="64" height="64" />
+			-->
+			<img src="rings.svg" width="64" height="64" />
+
+
+		</div>
+	</div>
+
+
+
+
+
+
+
+	<header id="header">
+		<!-- BEGIN MENU -->
+		<div class="menu_area">
+			<nav class="navbar navbar-default navbar-fixed-top past-main" role="navigation"> 
+				<div class="container">
+					<div class="navbar-header">
+						<!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+
+						<!-- LOGO -->
+
+						<!-- TEXT BASED LOGO -->
+
+
+						<!-- IMG BASED LOGO  -->
+						<a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo"></a>
+
+
+					</div>
+					<div id="navbar" class="navbar-collapse collapse">
+						<ul id="top-menu" class="nav navbar-nav navbar-right main_nav">
+							<li class="active"><a href="index.html">Home</a></li>
+							<li><a href="About_us.html">About</a></li>
+							<li><a href="#service">Services</a></li> 
+							<li><a href="#works">Works</a></li> 
+							<li><a href="#team">Team</a></li> 
+							<li><a href="#pricing">Pricing</a></li> 
+							<li><a href="#blog">Blog</a></li>               
+							<li><a href="#contact">Contacts</a></li>                           
+						</ul>           
+					</div><!--/.nav-collapse -->
+				</div>     
+			</nav>  
+		</div>
+	</header>
+
+
+	<section id="about" class"About_Us_page" style="padding-bottom: 0px;">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12">
+					<div class="about_area About_Us_page">
+						<!-- START ABOUT HEADING -->
+						<div class="heading">
+							<h2 class="wow fadeInLeftBig">Query Form</h2>
+							<div style="display:block; margin-top:10%;margin-bottom: 0%; padding-bottom: 0%;">
+								<form id="myform" style="display:block; margin-top:10%;margin-bottom: 6%; padding-bottom: 0%;">
+									<p>
+										<label for="">Click on a field</label>
+										<input  data-progression type="text" data-helper="Help users through forms by prividing helpful hinters" name="name" value="" placeholder="">
+									</p>
+									<p>
+										<label for="">Helps provide a better user experience</label>
+										<input data-progression type="text" data-helper="Tracks users progress when filling in forms" name="email" value="" placeholder="">
+									</p>
+									<p class="left">
+										<label for="">Another Field</label>
+										<input data-progression type="text" data-helper="The tooltip is fully customisable" name="mytel" value="" placeholder="">
+									</p>
+									<p class="right">
+										<label for="">Another Field</label>
+										<input data-progression type="text" data-helper="And can be positioned left or right" name="mytel" value="" placeholder="">
+									</p>
+									<p>
+										<label for="">Telephone Number</label>
+										<textarea data-progression name="" data-helper="Either the helper text or progress bar can be turned off"></textarea>
+									</p>
+									<p>
+										<input type="submit" class="submit_btn" name="" value="Lets Go!" placeholder="">
+									</p>
+								</form>
+							</div>
+						</div>
+
+						<!-- START ABOUT CONTENT -->
+					</div>
+				</div>
+			</div>
+		</div>
+	<footer id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-6">
+					<div class="footer_left">
+						<p>Copyright &copy; 2015 <a href="https://www.facebook.com/ananya.kirti">Ananya Kirti</a>. All Rights Reserved</p>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6">
+					<div class="footer_right">
+						<ul class="social_nav">
+							<li><a href="https://www.facebook.com/ananya.kirti"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+							<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Javascript Files
+	================================================== -->
+
+	<!-- initialize jQuery Library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<!-- For smooth animatin  -->
+	<script src="js/wow.min.js"></script> 
+	<!-- Bootstrap js -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Custom js-->
+	<script src="js/custom_enter.js"></script>
+	<!-- Parallax.js-->
+	<script src="JS/parallax.js"></script>
+
+	<script>
+
+		// Pretty simple huh?
+		var scene = document.getElementById('scene');
+		var parallax = new Parallax(scene);
+
+
+	</script>
+
+	<script type="text/javascript" language="javascript">
+		$(container_IEEE).ready(function() {
+			$(container_IEEE).bind("contextmenu",function(e) {
+				return false;
+			});
+		}); 
+	</script>
+</body>
+</html>
