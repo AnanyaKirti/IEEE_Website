@@ -87,7 +87,6 @@ jQuery(function($){
     })
 
 
-
 	 var zoom= $('#map_canvas').gmap('option', 'zoom');
       
       $('#map_canvas').gmap().bind('init', function(ev, map) {

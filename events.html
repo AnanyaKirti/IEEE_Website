@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Basic Page Needs
+	================================================== -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Events IEEE - IIT Ropar </title>
+
+<!-- Mobile Specific Metas
+	================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+
+<!-- CSS
+	================================================== -->       
+	<!-- Bootstrap css file-->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- Font awesome css file-->
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<!-- Superslide css file-->
+	<link rel="stylesheet" href="css/superslides.css">
+	<!-- Slick slider css file -->
+	<link href="css/slick.css" rel="stylesheet"> 
+	<!-- smooth animate css file -->
+	<link rel="stylesheet" href="css/animate.css">  
+	<!-- Elastic grid css file -->
+	<link rel="stylesheet" href="css/elastic_grid.css"> 
+	<!-- Circle counter cdn css file -->
+
+	<!-- Default Theme css file -->
+	<link id="orginal" href="css/themes/default-theme.css" rel="stylesheet">
+	<!-- Main structure css file -->
+	<link href="style.css" rel="stylesheet">
+	<!--IEEE logo -->
+	<link rel="stylesheet" type="text/css" href="css/IEEE_styles.css"/>
+
+	<!-- Google fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+	<style>
+/* -------------------------------------
+* For horizontal version, set the
+* $vertical variable to false
+* ------------------------------------- */
+/* -------------------------------------
+* General Style
+* ------------------------------------- */
+.my_timeline_div{
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 5%;
+	font-size: 100%;
+	color: #fff;
+	background: RGBA(53, 162, 198, 0.5);
+	background-image: url(img/Background/new_1.jpg);
+	padding: 2%;
+	margin-bottom: 3%;
+}
+.my_timeline_div h2 {
+	margin: 3em 0 0 0;
+	font-size: 1.5em;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+/* -------------------------------------
+* timeline
+* ------------------------------------- */
+#timeline {
+	list-style: none;
+	margin: 50px 0 30px 120px;
+	padding-left: 30px;
+	border-left: 8px solid #fff;
+}
+#timeline li {
+	margin: 40px 0;
+	position: relative;
+}
+#timeline p {
+	margin: 0 0 15px;
+}
+
+.date {
+	margin-top: -10px;
+	top: 50%;
+	left: -158px;
+	font-size: 0.95em;
+	line-height: 20px;
+	position: absolute;
+}
+
+.circle {
+	margin-top: -10px;
+	top: 50%;
+	left: -44px;
+	width: 10px;
+	height: 10px;
+	background: RGBA(53, 162, 198, 0.5);
+	border: 5px solid #fff;
+	border-radius: 50%;
+	display: block;
+	position: absolute;
+}
+
+.content {
+	max-height: 20px;
+	padding: 50px 20px 0;
+	border-color: transparent;
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 0.5em;
+	position: relative;
+}
+.content:before, .content:after {
+	content: "";
+	width: 0;
+	height: 0;
+	border: solid transparent;
+	position: absolute;
+	pointer-events: none;
+	right: 100%;
+}
+.content:before {
+	border-right-color: inherit;
+	border-width: 20px;
+	top: 50%;
+	margin-top: -20px;
+}
+.content:after {
+	border-right-color: RGBA(53, 162, 198, 0.5);
+	border-width: 17px;
+	top: 50%;
+	margin-top: -17px;
+}
+.content p {
+	max-height: 0;
+	color: transparent;
+	text-align: justify;
+	word-break: break-word;
+	hyphens: auto;
+	overflow: hidden;
+}
+
+label {
+	font-size: 1.3em;
+	position: absolute;
+	z-index: 100;
+	cursor: pointer;
+	top: 20px;
+	margin-left: 2em;
+	transition: transform 0.2s linear;
+}
+
+.radio {
+	display: none;
+}
+
+.radio:checked + .relative label {
+	cursor: auto;
+	transform: translateX(42px);
+	margin-left: 0em;
+}
+.radio:checked + .relative .circle {
+	background: #f98262;
+}
+.radio:checked ~ .content {
+	max-height: 180px;
+	border-color: #fff;
+	margin-right: 20px;
+	transform: translateX(20px);
+	transition: max-height 0.4s linear, border-color 0.5s linear, transform 0.2s linear;
+}
+.radio:checked ~ .content p {
+	max-height: 200px;
+	color: #fff;
+	transition: color 0.3s linear 0.3s;
+}
+
+/* -------------------------------------
+* mobile phones (vertical version only)
+* ------------------------------------- */
+@media screen and (max-width: 767px) {
+	#timeline {
+		margin-left: 0;
+		padding-left: 0;
+		border-left: none;
+	}
+	#timeline li {
+		margin: 50px 0;
+	}
+
+	label {
+		width: 85%;
+		font-size: 1.1em;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		display: block;
+		transform: translateX(18px);
+	}
+
+	.content {
+		padding-top: 45px;
+		border-color: #fff;
+	}
+	.content:before, .content:after {
+		border: solid transparent;
+		bottom: 100%;
+	}
+	.content:before {
+		border-bottom-color: inherit;
+		border-width: 17px;
+		top: -16px;
+		left: 50px;
+		margin-left: -17px;
+	}
+	.content:after {
+		border-bottom-color: RGBA(53, 162, 198, 0.5);
+		border-width: 20px;
+		top: -20px;
+		left: 50px;
+		margin-left: -20px;
+	}
+	.content p {
+		font-size: 0.9em;
+		line-height: 1.4;
+	}
+
+	.circle, .date {
+		display: none;
+	}
+}
+
+</style>
+
+<script src="js/prefixfree.min.js"></script>
+
+</head>
+
+<body>
+	<!-- BEGAIN PRELOADER -->
+	<div id="preloader">
+		<div class="section">
+			<div id="container_IEEE" class="container_IEEE">
+				<ul class="scene">
+					<li class="layer" data-depth="0.20"><img src="Img/IEEE/IEEE.png"></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="status">&nbsp;
+<!--
+<img src="loading-cylon.svg" width="64" height="64" />
+-->
+<img src="rings.svg" width="64" height="64" />
+
+
+</div>
+</div>
+
+
+<header id="header" >
+	<!-- BEGIN MENU -->
+	<div class="menu_area">
+		<nav class="navbar navbar-default navbar-fixed-top past-main" role="navigation"> 
+			<div class="container">
+				<div class="navbar-header">
+					<!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+					<!-- LOGO -->
+
+					<!-- TEXT BASED LOGO -->
+
+
+					<!-- IMG BASED LOGO  -->
+					<a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo"></a>
+
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul id="top-menu" class="nav navbar-nav navbar-right main_nav">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="index.html#About">About Us</a></li>
+						<li><a href="index.html#why_join">Why Join IEEE</a></li>
+						<li class="active"><a href="events.html">Events</a></li>
+						<li><a href="branch_info.html">Branch Info</a></li>        
+						<li><a href="Query.html">Query</a></li>                           
+					</ul>           
+				</div><!--/.nav-collapse -->
+			</div>     
+		</nav>  
+	</div>
+</header>
+
+<!-- END MENU -->
+<section id="about" class"About_Us_page" style="padding-bottom: 0px; height:100vh;">
+
+
+	<section id="about" class"About_Us_page" style="padding-bottom: 0px; padding-top: 0px;">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12">
+					<div class="about_area About_Us_page">
+						<!-- START ABOUT HEADING -->
+						<div class="heading">
+							<h2 class="wow fadeInLeftBig">Event</h2>
+
+							<div class="my_timeline_div">
+								<ul id='timeline'>
+									<li class='work'>
+										<input class='radio' id='work5' name='works' type='radio' checked>
+										<div class="relative">
+											<label for='work5'>Lorem ipsum dolor sit amet</label>
+											<span class='date'>12 May 2013</span>
+											<span class='circle'></span>
+										</div>
+										<div class='content'>
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ea necessitatibus quo velit natus cupiditate qui alias possimus ab praesentium nostrum quidem obcaecati nesciunt! Molestiae officiis voluptate excepturi rem veritatis eum aliquam qui laborum non ipsam ullam tempore reprehenderit illum eligendi cumque mollitia temporibus! Natus dicta qui est optio rerum.
+											</p>
+										</div>
+									</li>
+									<li class='work'>
+										<input class='radio' id='work4' name='works' type='radio'>
+										<div class="relative">
+											<label for='work4'>Lorem ipsum dolor sit amet</label>
+											<span class='date'>11 May 2013</span>
+											<span class='circle'></span>
+										</div>
+										<div class='content'>
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ea necessitatibus quo velit natus cupiditate qui alias possimus ab praesentium nostrum quidem obcaecati nesciunt! Molestiae officiis voluptate excepturi rem veritatis eum aliquam qui laborum non ipsam ullam tempore reprehenderit illum eligendi cumque mollitia temporibus! Natus dicta qui est optio rerum.
+											</p>
+										</div>
+									</li>
+									<li class='work'>
+										<input class='radio' id='work3' name='works' type='radio'>
+										<div class="relative">
+											<label for='work3'>Lorem ipsum dolor sit amet</label>
+											<span class='date'>10 May 2013</span>
+											<span class='circle'></span>
+										</div>
+										<div class='content'>
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ea necessitatibus quo velit natus cupiditate qui alias possimus ab praesentium nostrum quidem obcaecati nesciunt! Molestiae officiis voluptate excepturi rem veritatis eum aliquam qui laborum non ipsam ullam tempore reprehenderit illum eligendi cumque mollitia temporibus! Natus dicta qui est optio rerum.
+											</p>
+										</div>
+									</li>
+									<li class='work'>
+										<input class='radio' id='work2' name='works' type='radio'>
+										<div class="relative">
+											<label for='work2'>Lorem ipsum dolor sit amet</label>
+											<span class='date'>09 May 2013</span>
+											<span class='circle'></span>
+										</div>
+										<div class='content'>
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ea necessitatibus quo velit natus cupiditate qui alias possimus ab praesentium nostrum quidem obcaecati nesciunt! Molestiae officiis voluptate excepturi rem veritatis eum aliquam qui laborum non ipsam ullam tempore reprehenderit illum eligendi cumque mollitia temporibus! Natus dicta qui est optio rerum.
+											</p>
+										</div>
+									</li>
+									<li class='work'>
+										<input class='radio' id='work1' name='works' type='radio'>
+										<div class="relative">
+											<label for='work1'>Lorem ipsum dolor sit amet</label>
+											<span class='date'>08 May 2013</span>
+											<span class='circle'></span>
+										</div>
+										<div class='content'>
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ea necessitatibus quo velit natus cupiditate qui alias possimus ab praesentium nostrum quidem obcaecati nesciunt! Molestiae officiis voluptate excepturi rem veritatis eum aliquam qui laborum non ipsam ullam tempore reprehenderit illum eligendi cumque mollitia temporibus! Natus dicta qui est optio rerum.
+											</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+
+
+							<!-- START ABOUT CONTENT -->
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<footer id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-6">
+					<div class="footer_left">
+						<p>Copyright &copy; 2015 <a href="https://www.facebook.com/ananya.kirti">Ananya Kirti</a>. All Rights Reserved</p>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6">
+					<div class="footer_right">
+						<ul class="social_nav">
+							<li><a href="https://www.facebook.com/ananya.kirti"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+							<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+	<!-- initialize jQuery Library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<!-- For smooth animatin  -->
+	<script src="js/wow.min.js"></script> 
+	<!-- Bootstrap js -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Custom js-->
+	<script src="js/custom_enter.js"></script>
+
+
+	<!-- initialize jQuery Library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<!-- For smooth animatin  -->
+	<script src="js/wow.min.js"></script> 
+	<!-- Bootstrap js -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Custom js-->
+	<script src="js/custom_enter.js"></script>
+</body>
+</html>
